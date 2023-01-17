@@ -15,6 +15,7 @@
 		17F4914822001F5A0088A2FE /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F4914722001F5A0088A2FE /* PushNotificationManager.swift */; };
 		17F4914A22001F690088A2FE /* PushNotificationSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F4914922001F690088A2FE /* PushNotificationSender.swift */; };
 		17F4914D22002EDC0088A2FE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17F4914C22002EDC0088A2FE /* GoogleService-Info.plist */; };
+		2C03A02729770C2B00C66913 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03A02629770C2B00C66913 /* HomeViewController.swift */; };
 		2CD87658295C048F00DB3AFC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD87657295C048F00DB3AFC /* MapViewController.swift */; };
 		2CD8765A295C062A00DB3AFC /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD87659295C062A00DB3AFC /* PlacesViewController.swift */; };
 		2CD8765E296DE49000DB3AFC /* UNLocationNotificationTrigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD8765D296DE49000DB3AFC /* UNLocationNotificationTrigger.swift */; };
@@ -37,6 +38,7 @@
 		17F4914922001F690088A2FE /* PushNotificationSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationSender.swift; sourceTree = "<group>"; };
 		17F4914B220027110088A2FE /* FirebaseStarterKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FirebaseStarterKit.entitlements; sourceTree = "<group>"; };
 		17F4914C22002EDC0088A2FE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2C03A02629770C2B00C66913 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2CD87657295C048F00DB3AFC /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2CD87659295C062A00DB3AFC /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
 		2CD8765D296DE49000DB3AFC /* UNLocationNotificationTrigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNLocationNotificationTrigger.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				2CD876672971A5BA00DB3AFC /* AboutTabViewController.swift */,
 				2CD87657295C048F00DB3AFC /* MapViewController.swift */,
 				2CD87659295C062A00DB3AFC /* PlacesViewController.swift */,
+				2C03A02629770C2B00C66913 /* HomeViewController.swift */,
 				17F4913822001A1C0088A2FE /* Main.storyboard */,
 				17F4913B22001A1E0088A2FE /* Assets.xcassets */,
 				17F4913D22001A1E0088A2FE /* LaunchScreen.storyboard */,
@@ -267,6 +270,7 @@
 				2CD8765E296DE49000DB3AFC /* UNLocationNotificationTrigger.swift in Sources */,
 				17F4913522001A1C0088A2FE /* AppDelegate.swift in Sources */,
 				2CD87660296DE9EE00DB3AFC /* LocationNotificationInfo.swift in Sources */,
+				2C03A02729770C2B00C66913 /* HomeViewController.swift in Sources */,
 				2CD876662971A59800DB3AFC /* SettingsTabViewController.swift in Sources */,
 				2CD87658295C048F00DB3AFC /* MapViewController.swift in Sources */,
 				17F4914A22001F690088A2FE /* PushNotificationSender.swift in Sources */,

@@ -18,7 +18,7 @@ import GoogleMaps
 import GooglePlaces
 
 class MapViewController: UIViewController {
-    
+
   // [START maps_ios_current_place_declare_params]
   var locationManager: CLLocationManager!
   var currentLocation: CLLocation?
@@ -68,7 +68,7 @@ class MapViewController: UIViewController {
 
     placesClient = GMSPlacesClient.shared()
     // [END maps_ios_current_place_init_params]
-
+      
     // [START maps_ios_current_place_create_a_map]
     // A default location to use when location permission is not granted.
     let defaultLocation = CLLocation(latitude: -33.869405, longitude: 151.199)
@@ -83,10 +83,10 @@ class MapViewController: UIViewController {
     mapView.isMyLocationEnabled = true
 
     // Add the map to the view, hide it until we've got a location update.
-    view.addSubview(mapView)
+      self.view = mapView
     mapView.isHidden = true
     // [END maps_ios_current_place_create_a_map]
-
+      
     listLikelyPlaces()
   }
 
@@ -161,5 +161,12 @@ extension MapViewController: CLLocationManagerDelegate {
     print("Error: \(error)")
   }
     
+    
 }
 // [END maps_ios_current_place_location_manager_delegate]
+
+extension MapViewController {
+    @IBAction func unwindHome(segue: UIStoryboardSegue) {
+    }
+  }
+  
