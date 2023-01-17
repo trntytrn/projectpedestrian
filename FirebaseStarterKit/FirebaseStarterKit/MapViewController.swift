@@ -18,11 +18,13 @@ import GoogleMaps
 import GooglePlaces
 
 class MapViewController: UIViewController {
+    @IBOutlet var mapView: GMSMapView!
+    @IBOutlet var button:UIButton!
+
 
   // [START maps_ios_current_place_declare_params]
   var locationManager: CLLocationManager!
   var currentLocation: CLLocation?
-  var mapView: GMSMapView!
   var placesClient: GMSPlacesClient!
   var preciseLocationZoomLevel: Float = 15.0
   var approximateLocationZoomLevel: Float = 10.0
@@ -83,12 +85,15 @@ class MapViewController: UIViewController {
     mapView.isMyLocationEnabled = true
 
     // Add the map to the view, hide it until we've got a location update.
-      self.view = mapView
-    mapView.isHidden = true
     // [END maps_ios_current_place_create_a_map]
-      
-    listLikelyPlaces()
+   
+
   }
+    @IBAction func openHome(sender: AnyObject) {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil);
+        let vc = storyboard.instantiateViewController(withIdentifier:"HomeViewController")
+            self.present(vc, animated: true, completion: nil);
+    }
 
   // [START maps_ios_current_place_list_likely_places]
   // Populate the array with the list of likely places.
