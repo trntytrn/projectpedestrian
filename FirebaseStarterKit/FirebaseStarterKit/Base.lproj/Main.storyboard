@@ -31,7 +31,9 @@
                                     <color key="baseBackgroundColor" name="ppnavy"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="openHomeWithSender:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="xQU-Ds-p5i"/>
+                                    <segue destination="ifY-29-cmZ" kind="popoverPresentation" popoverAnchorView="jFJ-MY-kEP" id="Jjw-kb-hlY">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
                                 </connections>
                             </button>
                         </subviews>
@@ -40,7 +42,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" id="kKo-fW-KJS"/>
                     <connections>
-                        <outlet property="button" destination="jFJ-MY-kEP" id="PWi-bj-Kf0"/>
                         <outlet property="mapView" destination="Rsb-R9-HcR" id="Pm1-PX-awg"/>
                     </connections>
                 </viewController>
@@ -148,7 +149,7 @@
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" title="Home" id="ifY-29-cmZ" customClass="HomeViewController" customModule="FirebaseStarterKit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HLd-7U-BBm">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="figure.walk.diamond.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="cW6-Co-LaM">
